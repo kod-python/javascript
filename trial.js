@@ -36,7 +36,7 @@
 
 ];
 
-console.log(library[1])
+console.log(library)
 
 library[0].status.read = true
 library[1].status.read = true
@@ -53,6 +53,7 @@ console.log(library)
 // const{title:first_book}=library[0];
 // console.log(library[0].title)
 
+// changed the name
 library.title = "first_book"
 console.log(library)
 

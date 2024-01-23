@@ -112,17 +112,81 @@ car.stop = function (){
 car.start()
 car.stop()
 
-// array method of removing or deleteing an item 
+
+// array method of removing or deleteing an item
 
 car.features = ["brake","shokes","foul"]
 let my_car_features = car.features
 
-let index_to_remove = 1
+let index_to_remove = 0
 
-my_car_features.splice(index_to_remove,1)
+my_car_features.pop(index_to_remove,0)
 
 console.log(my_car_features);
 
 car.features = my_car_features
 
-console.log(car.features)
+console.log(car.features);
+
+
+const todo = new Object()
+todo.id = 2
+todo.myTitle = "pay for hair";
+todo.completed = false;
+
+
+const todo2 = new Object()
+
+// nesting object
+
+const person = {
+    address:{
+        coords:{
+            lat:88-43,
+            lon:-76.9,
+        },
+    },
+};
+
+console.log(`Longitude: ${person.address.coords.lon}`);
+console.log(`Latitude: ${person.address.coords.lat}`);
+
+
+
+// spread opereators
+
+const monday ={
+    morning:"breakfast in bed",
+    afternoon:"fast",
+    evening:"mirage",
+    late_night:"netflix and chill"
+};
+
+const tuesday ={
+    morning:"church for prayers",
+    afternoon:"work",
+    evening:"see my beautiful wife",
+    late_evening:"mpaebor kesie"
+
+};
+
+console.log(tuesday.late_evening);
+let move_from_tuesday = tuesday.late_evening
+console.log(move_from_tuesday)
+
+monday.dawn = move_from_tuesday
+console.log(monday)
+
+
+// let night = [monday.late_night]
+// night.push[tuesday.late_evening]
+
+
+const for_the_week ={...monday, ...tuesday};
+console.log(for_the_week);
+
+
+// const for_the_week =[monday, tuesday]
+// console.log(...for_the_week)
+
+

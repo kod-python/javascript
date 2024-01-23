@@ -1,26 +1,62 @@
-const library = [
+ const library = [
     {
-        title:"first book",
+        title:"grieve child",
         author:"kod",
+        status:{
+            own:true,
+            read:false,
+            reading:false
+        }
         
     },
-   
-  status =
-    {
-     own:true,
-     reading:false,
-     read:false
-}
 
+    {
+        title:"linux",
+        author:"david",
+        status:{
+            own:true,
+            read:false,
+            reading:false
+        }
+        
+    },
+
+
+    {
+        title:"python",
+        author:"mixhel",
+        status:{
+            own:true,
+            read:false,
+            reading:false
+        }
+        
+    },
 
 
 ];
 
+console.log(library[1])
+
+library[0].status.read = true
+library[1].status.read = true
+library[2].status.read = true
+
+console.log(library[0]);
+console.log(library[1]);
+console.log(library[2]);
+
+// delete an object
+delete library.title
 console.log(library)
 
-let read = library.status.read
-console.log(read)
+// const{title:first_book}=library[0];
+// console.log(library[0].title)
 
-read = [library.own,library.reading]
-console.log(read)
+library.title = "first_book"
+console.log(library)
+
+
+
+
 

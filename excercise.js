@@ -59,3 +59,16 @@ function calculatePower(a,b){
   console.log(Math.pow(a,b));
 }
 calculatePower(4,3)
+
+
+// New exercise
+
+// Q1
+
+
+
+function getCelsius(Fahrenheight){
+  return (Fahrenheight - 32) * (5/9);
+};
+
+console.log(`${getCelsius.Fahrenheight} Celcius`)

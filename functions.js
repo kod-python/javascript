@@ -89,3 +89,5 @@ function enter_number(number){
  console.log(myPerson(person2))
  console.log(myPerson(person3))
 
+
+ 

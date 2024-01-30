@@ -1,3 +1,4 @@
+
 let degreeCelcius = prompt("determine the temperature by entering a number:")
 
 let temperature;
@@ -8,15 +9,15 @@ switch (true) {
     temperature = "Freezing"
     break;
 
-    case degreeCelcius >= 0 && <= 10:
+    case degreeCelcius >= 0 && degreeCelcius <= 10:
       temperature = "cold"
       break;
 
-      case degreeCelcius >= 11 && <= 20:
+      case degreeCelcius >= 11 && degreeCelcius <= 20:
         temperature = "cool"
         break;
 
-        case degreeCelcius >= 21 && <= 30:
+        case degreeCelcius >= 21 && degreeCelcius <= 30:
           temperature = "warm"
           break;
 
@@ -29,8 +30,8 @@ switch (true) {
     
 
   default:
-    temperature = "the weather can not be determined"
+    temperature = "the weather can not be determined by the number inputed"
     break;
 }
 
-console.log(`the temperature level is at ${temperature} degree celcius`)
+console.log(`the temperature level is  very a ${temperature} at ${degreeCelcius} degree celcius`)

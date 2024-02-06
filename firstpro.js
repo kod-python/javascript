@@ -1,4 +1,13 @@
 
+// inner html
+
+let firstPage = document.getElementById("signup-page");
+console.log(firstPage)
+
+firstPage.innerHTML = "<h1>please sign up</h1> <label>first name</label> <input><label>last name</label><input><label>Email</label><input> <label>Password</label><input>";
+
+
+
 
 // input
 

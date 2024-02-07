@@ -6,7 +6,7 @@ body.style.backgroundColor = "#232323"
 
 
 
-let from = document.createElement("form")
+let form = document.getElementById("form")
 
 
 
@@ -126,5 +126,5 @@ inputField.id = "inputF"
 
 
 
-from.append(logo)
-from.appendChild(inputField)
+form.append(logo)
+form.appendChild(inputField)

@@ -1,6 +1,12 @@
+
+
+let body = document.body;
+
+body.style.backgroundColor = "#232323"
+
+
+
 let from = document.createElement("form")
-
-
 
 
 
@@ -112,3 +118,13 @@ logo.addEventListener('keypress', function(){
     this.style.color = "brown"
 })
 
+
+
+let inputField = document.createElement("input")
+inputField.type = "text"
+inputField.id = "inputF"
+
+
+
+from.append(logo)
+from.appendChild(inputField)
